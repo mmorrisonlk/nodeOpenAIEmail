@@ -1,2 +1,2 @@
-# nodeHelloWorld
- Refreshing Knowledge on Node
+# nodePlusOpenAI
+ Learning to use ChatGPT to automate the email process.
