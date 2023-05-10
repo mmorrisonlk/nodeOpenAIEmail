@@ -9,10 +9,10 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 let response;
 
-async function makeRequest(incomingText) {
+async function makeRequest(incomingText, prompt) {
     const completion = await openai.createChatCompletion({
         model: "gpt-3.5-turbo",
-        messages: [{role: "user", content: "Say hi"}],
+        messages: [{role: "user", content: prompt}],
       });
     incomingText = completion.data.choices[0].message.content
     console.log("response", incomingText);
